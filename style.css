@@ -177,20 +177,20 @@
   }
 
   /*project section*/
-  #portfolio{
+  #project{
     padding: 4rem 1rem;
   }
 
-  #portfolio h2{
+  #project h2{
     font-size: 2.5rem;
     margin-bottom: calc(2.5rem*1.5);
   }
 
-  #portfolio h3{
+  #project h3{
     color: var(--aqua);
   }
 
-  #portfolio h4{
+  #project h4{
     font-size: 1rem;
     font-family: var(--mono);
     margin: 0;
@@ -205,7 +205,17 @@
     line-height: 1.5;
   }
 
-  #portfolio ul{
+  .blackbox2{
+    opacity: 0.8;
+    background-color: var(--black);
+    padding: 1rem;
+    border-radius: 10px;
+    color: var(--white);
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+
+  #project ul{
     list-style-type: none;
     padding: 0;
     margin: 0;
@@ -216,7 +226,7 @@
     font-size: 1rem;
   }
 
-  #portfolio img{
+  #project img{
 
     margin: 2rem 0 4rem 0;
     border-left: 1px solid var(--aqua);
@@ -231,12 +241,12 @@
       grid-template-columns: repeat(10, 1fr);
       gap: 1rem;
     }
-    #portfolio{
+    #project{
       max-width: 1200px;
       margin: 0 auto;
     }
 
-    #portfolio img{
+    #project img{
       grid-column: 1/6;
       grid-row: 1/2;
     }
@@ -246,20 +256,47 @@
       order:2;
       text-align: right;
     }
-    #portfolio ul{
+    .text2{
+      grid-column: 5/11;
+      grid-row: 1/2;
+      order:2;
+      text-align: right;
+    }
+    .text2 ol{
+      list-style-type: none;
+      grid-column: 6/11;
+      grid-row: 1/2;
+      order:2;
+      text-align: right;
+      line-height: 2;
+    }
+    .text2 ul{
+      list-style-type: none;
+      grid-column: 6/11;
+      grid-row: 1/2;
+      order:2;
+      text-align: right;
+      line-height: 2;
+    }
+    #project ul{
       justify-content: flex-end;
     }
 
-    #portfolio .reverse .text{
+    #project .reverse .text{
       grid-column: 1/7;
       order: 2;
       text-align: left;
     }
-    #portfolio .reverse img{
+    #project .reverse .text2{
+      grid-column: 1/7;
+      order: 2;
+      text-align: left;
+    }
+    #project .reverse img{
       grid-column: 6/11;
       grid-row: 1/2;
     }
-    #portfolio .reverse ul{
+    #project .reverse ul{
       justify-content: flex-start;
     }
   }
